@@ -42,9 +42,9 @@ const SocialLinks: React.FC = () => {
       <a href="https://linkedin.com/in/aaron-anguiano" className="text-white hover:text-gray-300 transition-colors">
         <Linkedin size={24} />
       </a>
-      <a href="mailto:your@email.com" className="text-white hover:text-gray-300 transition-colors">
+      {/* <a href="mailto:your@email.com" className="text-white hover:text-gray-300 transition-colors">
         <Mail size={24} />
-      </a>
+      </a> */}
     </div>
   )
 }
