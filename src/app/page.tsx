@@ -6,7 +6,7 @@ import vertexShader from "../shaders/vertex.glsl";
 import fragmentShader from "../shaders/fragment.glsl";
 import { Suspense, useRef } from "react";
 import { WaveShaderMaterial as ImportedWaveShaderMaterial } from "../../custom";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 export default function Page() {
   return (
@@ -29,7 +29,12 @@ export default function Page() {
 
 const Title: React.FC = () => {
   return (
-    <h1 className="text-7xl font-bold text-white text-left">Aaron Anguiano.</h1>
+    <div>
+      <h1 className="text-7xl font-bold text-white text-left p-5">Aaron Anguiano.</h1>
+      <h2 className="text-5xl font-bold text-white text-center p-5"><a href="https://peruna.aaroncodes.art">Peruna</a></h2>
+      <h2 className="text-5xl font-bold text-white text-center p-5"><a href="https://genuary25.aaroncodes.art">Genuary 2025</a></h2>
+      <h2 className="text-5xl font-bold text-white text-center p-5"><a href="https://goatwave.aaroncodes.art">GOATWAVE</a></h2>
+    </div>
   );
 };
 
