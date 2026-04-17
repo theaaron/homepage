@@ -7,6 +7,7 @@ import fragmentShader from "../shaders/fragment.glsl";
 import { Suspense, useRef } from "react";
 import { WaveShaderMaterial as ImportedWaveShaderMaterial } from "../../custom";
 import { Github, Linkedin } from "lucide-react";
+import { FilmGrainEffect } from "@/components/FilmGrainEffect";
 
 export default function Page() {
   return (
@@ -18,6 +19,7 @@ export default function Page() {
         <Suspense>
           <Blobby />
         </Suspense>
+        <FilmGrainEffect />
       </Canvas>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
         <Title />
@@ -29,12 +31,12 @@ export default function Page() {
 
 const Title: React.FC = () => {
   return (
-    <div>
-      <h1 className="text-7xl font-bold text-white text-left p-5">Aaron Anguiano.</h1>
-      <h2 className="text-5xl font-bold text-white text-center p-5"><a href="https://peruna.aaroncodes.art">Peruna</a></h2>
-      <h2 className="text-5xl font-bold text-white text-center p-5"><a href="https://genuary25.aaroncodes.art">Genuary 2025</a></h2>
-      <h2 className="text-5xl font-bold text-white text-center p-5"><a href="https://goatwave.aaroncodes.art">GOATWAVE</a></h2>
-    </div>
+    <>
+      <h1 className="text-7xl font-bold text-white text-center">Aaron Anguiano.</h1>
+      <h2 className="text-3xl font-bold text-white text-center p-3"><a href="https://wxr-wgl-simulations.vercel.app/">Simulations of Electrical Activity in Cardiac Tissue, WebXR</a></h2>
+      <h2 className="text-3xl font-bold text-white text-center p-3"><a href="https://genuary25.aaroncodes.art">Genuary 2025</a></h2>
+      <h2 className="text-3xl font-bold text-white text-center p-3"><a href="https://goatwave.aaroncodes.art">GOATWAVE</a></h2>
+    </>
   );
 };
 
